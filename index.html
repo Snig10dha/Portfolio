@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="'X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Personal Portfolio website </title>
+        <link rel=" stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8a4b48a95f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANUAAACUCAMAAAAzmpx4AAAAY1BMVEUAAACgoKC3t7eqqqpZWVmnp6e0tLSjo6O6urrCwsKcnJwqKipMTEyUlJSOjo6urq4KCgo9PT0fHx9nZ2c4ODgZGRkTExMvLy9wcHCIiIjQ0NB3d3ckJCTJycmCgoJfX1/g4OAItZ8sAAADCklEQVR4nO3Z2ZKiMBQGYNaQhEBYBFlEff+nHLKgMO30TLWWkqn/u2BJS1VOJTk50J4HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+gSLKH7VlcvLknL3SSOUmqL81NEnN2/EB/XqKVWeGF/un3dj9MvYwcPtGlF2BZOw9M7Lfb5lCm89zMgvQzvXoSM2uqJf6mOSaNOhWcvb9Lz6O3REHXYcXBcuVgWJXk9xuaNPaq5bK5NfPAtZQR8mZ1J7nNhFyuA9ne7V9gg+oifTqFZuR8YsK4dPrUcNI8eHivlpWU06sJq6UqLJ/ZWNnU64sioZ/o3s8sWa+f99qrGZY5IxbchtBNwmO5ufapI1VGmyRmhzqz0vNKZsOiVJodqmPz+KWkN+HE0o19K7RFkg7K8wQ1YbWj6X496UlZEjsJVaWxf9IG1TNbEwkThlXP0087sLM+V758Y+9+SCbmbEdKSa/3sOp7iNVgwirC28a8VwcWXWZRP62q13So7VW0GTebCb2Q7D1ldEQJwk1JLpgN67yZbYfAjJYXxl8KexdENqxjmK+bhQ2rSRKXtuMbMZipdww2YZVs1OdT7EDK2Kh18V5eTe5rhnH9x8reFiR8d7+ecmZUJ4PDkjJs6rMqm+A96VJYIhBerDfaC73oloqt8+C8Heejcp4cKuATtY78WPW4tuGM4SY1CO5r44Ond6oa1Oxrie5yNOi1lcrLR/v0vF6/WJV28olBFxy8/2CPXmFQU6/Ilm8YnS6OIunkpnt3VYcjW8ryMlZLq3L3G6fWXtWxnG73XC+wydVPnEZzVcdyWO7/j6jMDDxMSyo/xCpttMzxqAa1ou7ZYiTq6Hy2yHU8IjBv+XYfzvJvnnDB0Sypi4y7qPMDXQpWsv72GQeEpngtRz/2z+alvyaOT8B5DVH7/aI62a/SKXN+qOY3EbpNeE3w+L+qjskCsboThP/xl04ZKV8qpGNGXK9sb0TGaB6JqKcsE3//uSuKY5RRFvAo3fuHPwAAAAAAAAAAAAAAAAAAAAAAAAAAAIBd+gU6Wh7oZoE1QAAAAABJRU5ErkJggg==" class="logo" width="100"height="100">
+                    <ul id="sidemenu">
+                        <li>
+                            <a href="#header">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <!-- <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i> -->
+                    </ul>
+                    
+                    <!-- <i class="fa-solid fa-bars"onclick = "openmenu()"></i> -->
+                </nav>
+                <div class = "header-text">
+                    <p> UI/UX Designer</p>
+                    <h1>Hi, I am <span>Snigdha</span> <br> from India</h1>
+                </div>
+            </div>
+        </div>
+        <!-- --------about-------- -->
+        <div id="about">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "about-col-1">
+                        <img src ="profile.jpg" width="500" >
+                    </div>
+                    <div class = "about-col-2">
+                        <h1 class = "sub-title">About Me</h1>
+                        <p>A well-rounded individual possessing excellent problem-solving abilities, analytical thinking, and communication
+                            skills. Proficient in Python and Java, with a thorough grasp of data structures, algorithms, and object-oriented
+                            programming principles. A dedicated team collaborator focused on innovation and achieving outstanding results.
+                            Eager to leverage technical expertise and promote creativity in a dynamic setting</p>
+
+
+
+                        <div class = "tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class = "tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>FrontEnd </span><br>HTML CSS3 JavaScript</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <!-- <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li> -->
+                            </ul>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class = "tab-contents" id="experience">
+                            <ul>
+                                <li><span>Current<br></span>Shadow Fox<br></li>
+                                <li><span>2025</span><br> Winter of code </li>
+                                <li><span>2024</span><br>Dev Display</li>
+                            </ul>
+                        </div>
+
+                        <!-- Education -->
+                        <div class = "tab-contents" id="education">
+                            <ul>
+                                <li><span>Btech</span><br>Amrita Vishwa Vidyapeetham</li>
+                                <li><span>Intermediate</span><br>ST- Patrics Junior College</li>
+                                <li><span>Scholling</span><br>The Secunderabad Public School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------services---------------- -->
+         <div id = "services">
+            <div class = "container">
+                <h1 class = "sub-title"> My Services </h1>
+                <div class = "services-list">
+                    
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p></p>
+                        <a href = "#"> Learn More</a>
+                    </div>
+                    
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p> </p>
+                        <a href = "#"> Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Design</h2>
+                        <p></p>
+                        <a href = "#"> Learn More</a>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- -------portfolio-------- -->
+        <div id = "portfolio">
+            <div class = "container">
+                <h1 class = "sub-title">My Work</h1>
+                <div class = "work-list">
+                    <div class="work">
+                        <img src = "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/08/some-3d-social-media-icons.jpg">
+                        <div class = "layer">
+                            <h3> Social Media App</h3>
+                            <p>A social media app is an online platform that allows users to create, share, and interact with content and each other. These applications facilitate communication, collaboration, and entertainment, enabling users to connect with friends, family, and even strangers.</p>
+                            <a href = "#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src = "https://res.cloudinary.com/devex/image/fetch/c_scale,f_auto,q_auto,w_720/https://lh4.googleusercontent.com/VQyrPPyh-FGdV2BJtlcwDphesnxERD6SLWvGtARygLDVNSsXhFF0kzG_yXvLyiARZbKIG3VYF_CIbF4_B-Wy3Eu7kKhHKKR3pq_2ob2pdZgxt_Wz_uqXjRMrhIBKREQnJo--Ui9b">
+                        <div class = "layer">
+                            <h3> Hackathons</h3>
+                            <p> Hackathons are collaborative events where individuals come together to work intensively on software development projects within a limited timeframe, usually ranging from a few hours to several days. These events foster innovation, creativity, and teamwork in a fun, competitive environment.</p>
+                            <a href = "#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src = "https://img.freepik.com/free-vector/flat-design-portfolio-template-design_52683-80880.jpg?w=360">
+                        <div class = "layer">
+                            <h3> Portfolio </h3>
+                            <p> Creating a portfolio is an essential step for showcasing your skills, projects, and experiences to potential employers or clients. Here’s a comprehensive guide on how to build an effective portfolio, no matter your field.</p>
+                            <a href = "#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href ="#" class = "btn"> See more</a>
+            </div>
+        </div>
+
+
+        <!-- --------- contact ----------- -->
+        <div id="contact">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "contact-left">
+                        <h1 class = "sub-title"> Contact Me </h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>jallipallisnigdha@gmail.com </p>
+                        <p><i class="fa-solid fa-phone"></i>8977014169</p>
+                        <div class = "social-icons">
+                            <a href = "#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href ="#"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="C:\Users\Admin\Desktop\backup\Projects\Portfolio\RenderCV_EngineeringResumes_Theme__1_ (1).pdf" download class="btn btn2">Download Cv</a>
+                    </div>
+                    <div class = "contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type = "email" name="email" placeholder="Your email" required>
+                            <textarea name="Message" rows = "6" placeholder="Your message" required></textarea>
+                            <button type = "submit" class="btn btn2" name = "submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> Copy Right @Snigdha made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }  
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
